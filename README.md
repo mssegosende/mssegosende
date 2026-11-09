@@ -21,7 +21,6 @@ Each module has its own repository, built on the same structure: the explanation
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge" alt="SQL Server" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&amp;logo=sqlalchemy&amp;logoColor=white" alt="SQLAlchemy" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="Git" />
@@ -33,7 +32,73 @@ Each module has its own repository, built on the same structure: the explanation
   <img src="https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&amp;logo=googlegemini&amp;logoColor=white" alt="Gemini" />
   <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&amp;logo=n8n&amp;logoColor=white" alt="n8n" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&amp;logo=vite&amp;logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&amp;logo=pydantic&amp;logoColor=white" alt="Pydantic" />
+  <img src="https://img.shields.io/badge/Chroma-FF6446?style=for-the-badge" alt="Chroma" />
+  <img src="https://img.shields.io/badge/Groq-F55036?style=for-the-badge" alt="Groq" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&amp;logo=railway&amp;logoColor=white" alt="Railway" />
+  <img src="https://img.shields.io/badge/Resend-000000?style=for-the-badge" alt="Resend" />
 </p>
+
+## Shipped.
+
+| Project | What it does | Stack | Link |
+|---|---|---|---|
+| **Polaris** | RAG assistant over Argentine Central Bank regulations; every answer cites the clause it came from | Python, FastAPI, LangChain, Chroma, Groq | [Live](https://polaris-fawn-two.vercel.app) |
+| **Alphecca** | Picks the right LLM for a workload, with the cost math behind the choice | Python, embeddings | [Live](https://alphecca-eight.vercel.app/) |
+| **Ethos** | Clinic app split into services: React front end, Node gateway with JWT auth, FastAPI appointments service | React, Node.js, FastAPI, PostgreSQL | [Live](https://ethos-health-bice.vercel.app) |
+| **Blaze** | AI co-writing editor for Markdown, designed and built in about a week | TypeScript, LLM APIs | [Repo](https://github.com/mssegosende/blaze-ai-editor) |
+| **Lynx** | Flags fraud and financial abuse of older adults; rules and an LLM read each case, code makes the final call | Python, LangGraph, FastAPI | |
+| **Marvel Characters** | 304 characters fetched, filtered and validated at runtime | Next.js, TypeScript, Zod | |
+| **Portfolio** | My site, with a FastAPI contact service | React, FastAPI, Resend | [Live](https://msse-portfolio.vercel.app) |
+
+## From July to now.
+
+<details>
+<summary><b>November 2026: refining what I chose</b></summary>
+
+- **Making the chosen projects better:** Polaris, Alphecca and Ethos went live, and my portfolio got a full redesign.
+- **Blaze:** an AI co-writing editor for Markdown, built in about a week as a technical assessment.
+- **Lynx:** rebuilt after a technical review.
+- **Marvel Characters:** Next.js, TypeScript and Zod.
+- **Alphard:** building it with a friend. A real-time fraud detection and risk-scoring engine for banking.
+- **AI engineering:** going deeper.
+
+</details>
+
+<details>
+<summary><b>October 2026: AI engineering and the portfolio</b></summary>
+
+- **AI engineering course:** LLMs, prompting, embeddings, RAG, tool use and agents.
+- **Arcturus:** a multi-agent pipeline that reviews pull requests and hands them to a human when the rating is too low.
+- **Polaris:** a RAG assistant over Argentine Central Bank regulations.
+- **Portfolio:** chose the projects that go in it and added a Python contact service.
+- **Ethos:** front end finished, back end started.
+- **First books of the series:** Git & GitHub, Docker & Kubernetes and OOP, finished by Halloween.
+
+</details>
+
+<details>
+<summary><b>September 2026: architecture</b></summary>
+
+- **Portfolio v1:** React, TypeScript and a design system of my own, deployed on Vercel.
+- **Titanium TX:** a mobile-first marketplace mockup for commercial vehicles.
+- **Project specs:** one reusable template for every project: business rules, architecture, DevOps and vertical slices.
+- **Cybersecurity:** UTN diploma in Linux, cybersecurity and ethical hacking.
+- **Mock technical interviews** with a study partner.
+
+</details>
+
+<details>
+<summary><b>July – August 2026: foundations</b></summary>
+
+- **Apsis:** a personal AI productivity app in React, TypeScript and Tailwind.
+- **3D character viewer:** Node.js, Express and SQLite, with models prepared in Blender.
+- **Agent stack:** RAG, MCP, FastAPI and n8n, rebuilt until I could explain every part.
+- **Alphard:** started with a friend.
+
+</details>
 
 ## The series, on the shelf.
 
@@ -43,9 +108,9 @@ The first books are out: Git & GitHub, Docker & Kubernetes, OOP, AI engineering 
 
 ## On the desk.
 
-- **Studying:** Python, FastAPI and PostgreSQL in depth: data modeling, transactions, concurrency and testing. Alongside it, *Machine Learning in Production* (DeepLearning.AI).
-- **Building:** Ethos, a clinic app. Next step: splitting appointments, payments and patient data into their own services.
-- **Reviewing:** a security review across all my projects, built from what I learned shipping Polaris.
+- **Building:** Alphard, with a friend: a real-time fraud detection and risk-scoring engine for banking, with FastAPI, PostgreSQL and anomaly detection.
+- **Refining:** Ethos, splitting appointments, payments and patient data into their own services.
+- **Studying:** Python, FastAPI and PostgreSQL in depth, and AI engineering beyond the basics.
 
 ## All 26 at a glance.
 
@@ -53,8 +118,8 @@ The first books are out: Git & GitHub, Docker & Kubernetes, OOP, AI engineering 
 
 ## Latest updates.
 
-- **November 2026:** first books published: Git & GitHub, Docker & Kubernetes, OOP, AI engineering and Python. Profile redesigned, with light and dark themes on web and mobile.
-- **October 2026:** cheat sheets written for Git & GitHub, Docker & Kubernetes and OOP.
+- **November 2026:** refining my portfolio projects. Polaris, Alphecca, Ethos and the portfolio went live; Blaze delivered; AI engineering and Python books published; building Alphard with a friend.
+- **October 2026:** first books written: Git & GitHub, Docker & Kubernetes and OOP. Built Polaris, Arcturus and the Ethos front end.
 
 ---
 
