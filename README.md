@@ -18,10 +18,10 @@ Each module has its own repository, built on the same structure: the explanation
 A RAG assistant over Argentine Central Bank regulations. Its security review found three things worth fixing. A provider error was reaching the browser with my organization ID, plan limits and model name; clients now get a generic message instead, the full detail stays in the logs, and my bugs (500) are kept apart from provider failures (503). Each question travels inside its own tags, and the same markers are stripped from anything a user types, so nobody can fake a retrieved passage. And a 25-second timeout with one retry could take 51 seconds against the front end's 30, which is why it now waits 15 and doesn't retry. Testing also showed references sometimes arriving wrapped in 【】 brackets; normalizing them first kept the citation check from rejecting valid answers.
 
 **[Alphecca](https://alphecca-eight.vercel.app/)** · Python · FastAPI · Pydantic · Next.js · TypeScript<br>
-Describe what you need and it recommends an LLM from Google, OpenAI or Anthropic. It picks the cheapest option at the lowest tier the task requires, as long as it fits the context window, the rate limits and the free tier. The first version was built on Streamlit; today it's Next.js with a FastAPI back end.
+Describe what you need and it recommends an LLM from Google, OpenAI or Anthropic. The first version was built on Streamlit; today it's Next.js with a FastAPI back end. Next: semantic search over the providers' docs, to answer questions like "which models break if I send temperature?"
 
 **[Ethos](https://ethos-health-bice.vercel.app)** · FastAPI · PostgreSQL · Node.js · React<br>
-A clinic booking app for a fictional functional-medicine practice. The front end went live ahead of the back end: it talks to one interface with two adapters, demo and HTTP, picked by an environment variable, so the switch took a single setting. When it was ready to share, I reviewed its security: registration is off in production, the waitlist validates input without keeping any email, login has a rate limit, and the content security policy runs in report-only mode first, so nothing breaks until it's enforced. Next: capping how far ahead someone can book.
+A clinic booking app for a fictional functional-medicine practice. The front end went live ahead of the back end: it talks to one interface with two adapters, demo and HTTP, picked by an environment variable, so the switch took a single setting. When it was ready to share, I reviewed its security: registration is off in production, the waitlist validates input without keeping any email, login has a rate limit, and the content security policy runs in report-only mode first, so nothing breaks until it's enforced. Next: capping how far ahead someone can book, memberships with Stripe, and testing the LLM layer that helps clinicians interpret patient metrics.
 
 **[Lynx](https://lynx-site-chi.vercel.app/)** · Python · LangGraph · Gemini · FastAPI<br>
 Detects fraud, scams and financial exploitation of older adults in their bank accounts. Before making it public, I reviewed the repository: nothing left from the original challenge material, and a clean dependency audit. Next, ahead of the evals: setting a timeout on the Gemini SDK.
@@ -29,8 +29,8 @@ Detects fraud, scams and financial exploitation of older adults in their bank ac
 **[Marvel Characters](https://marvel-characters-coral.vercel.app/)** · Next.js · React · TypeScript · Zod<br>
 An older project of mine, rebuilt as a searchable browser of 304 characters. Its hardening pass pinned the dataset to a fixed commit, so an upstream change can't alter it silently, limited images to HTTPS from two allowed sources, and added protective headers while hiding the framework's signature. Next: a real 404 for characters that don't exist.
 
-**[Blaze](https://github.com/mssegosende/blaze-ai-editor)** · Node.js · OpenRouter · Vite · Tiptap<br>
-A Markdown editor where the AI is a co-author, not the author. The assistant is a single-step agent: one action and one call per request, which keeps cost and behavior predictable and leaves every change to the person. The Claude Code sessions I built it with are saved unedited in `ai-sessions/`, so anyone can see how that collaboration went.
+**[Blaze](https://github.com/mssegosende/blaze-ai-editor)** · Node.js · Hono · OpenRouter · React · TypeScript · Tiptap<br>
+A Markdown editor with an AI assistant. The assistant is a single-step agent: one action and one call per request, which keeps cost and behavior predictable and leaves every change to the person. The Claude Code sessions I built it with are saved unedited in `ai-sessions/`, so anyone can see how that collaboration went.
 
 ### Built, not deployed yet
 
