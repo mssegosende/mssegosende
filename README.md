@@ -47,7 +47,7 @@ A Markdown editor with an AI assistant. The assistant is a single-step agent: on
 <details>
 <summary><b>November 2026: more projects and the series</b></summary>
 
-- **Shipped:** Polaris, Alphecca and Ethos went from repo to deploy, Marvel Characters came back rebuilt.
+- **Shipped:** Polaris, Alphecca and Ethos went from repo to have more security and deploy, Marvel Characters came back rebuilt.
 - **Alphecca:** I needed a way to compare models for myself. It estimates, from the tokens you use per day, which model suits your workload and which one costs less. I built it to scale.
 - **The series:** 5 of 3 books are finished and 2 more on the way.
 - **The portfolio:** it's finished. From here, it simply keeps growing, with more projects and more videos as I build them.
@@ -58,7 +58,7 @@ A Markdown editor with an AI assistant. The assistant is a single-step agent: on
 <summary><b>October 2026: more challenges, AI engineering and data science</b></summary>
 
 - **Lynx:** I was studying fraud cases and brought AI engineering into one of them. I didn't know it was a data science challenge until I was already doing it. I ended up investigating it about it and defending it. Now I'm testing it against new cases.
-- **Polaris:** finished, ready to go live.
+- **Polaris:** finished. Its security review became the first guide in my reference lab, where I keep the patterns I reuse across projects.
 - **Portfolio:** finished, with the projects I chose to show.
 - **The series:** I mapped 26 books and wrote the first three, Git & GitHub, Docker & Kubernetes and OOP.
 
