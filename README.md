@@ -45,87 +45,82 @@ A Markdown editor with an AI assistant. The assistant is a single-step agent: on
 ## From March to now.
 
 <details>
-<summary><b>November 2026: more challenges and the series</b></summary>
+<summary><b>November 2026: more projects and the series</b></summary>
 
-- **Focus:** more challenges, and completing the Developer Reference Series in order, to go end to end even further across the ecosystem.
-- **Shipped:** Polaris, Alphecca and Ethos went live, and my portfolio got a full redesign.
-- **Alphecca:** I needed a way to check models. It estimates, from how many tokens you use per day, which model fits your workload and which one is cheaper. Built to scale.
-- **Marvel Characters:** I took an older project of mine and updated it to Next.js, TypeScript and Zod.
-- **Agents:** looking more closely at how existing agents could improve my workflow.
-- **The series:** AI engineering keeps growing, and the next books out this month are Design patterns, Async & reactive, and Cloud & scalability, to cover the essentials of the cloud.
+- **Shipped:** Polaris, Alphecca and Ethos went from repo to deploy, Marvel Characters came back rebuilt.
+- **Alphecca:** I needed a way to compare models for myself. It estimates, from the tokens you use per day, which model suits your workload and which one costs less. I built it to scale.
+- **The series:** 5 of 3 books are finished and 2 more on the way.
+- **The portfolio:** it's finished. From here, it simply keeps growing, with more projects and more videos as I build them.
 
 </details>
 
 <details>
 <summary><b>October 2026: more challenges, AI engineering and data science</b></summary>
 
-- **More challenges:** full-stack and AI engineering, some crossing into data science. Lynx and Blaze asked for very different things.
-- **Blaze:** an AI co-writing editor for Markdown, built in about a week.
-- **Lynx:** studying fraud cases, I added AI engineering to solve one: five cases where I had to compare the data and work out whether people had been robbed. I didn't know it was data science, and I ended up doing and defending a data science challenge. Now I'm contrasting it with new cases, using AI engineering tools.
-- **Polaris:** closed. A RAG assistant over Argentine Central Bank regulations.
-- **Portfolio:** closed, with the projects I chose.
-- **The series:** toward the end of the month, I realized I needed everything in one place, to stay organized and to plan what to study next, like LLMOps and cloud services, so I gathered what I had been studying into modules, one book per topic. I mapped 26 and wrote the first ones: Git & GitHub, Docker & Kubernetes and OOP.
+- **Lynx:** I was studying fraud cases and brought AI engineering into one of them. I didn't know it was a data science challenge until I was already doing it. I ended up investigating it about it and defending it. Now I'm testing it against new cases.
+- **Polaris:** finished, ready to go live.
+- **Portfolio:** finished, with the projects I chose to show.
+- **The series:** I mapped 26 books and wrote the first three, Git & GitHub, Docker & Kubernetes and OOP.
 
 </details>
 
 <details>
 <summary><b>September 2026: back to where I started</b></summary>
 
-- **Ethos:** the next step was a different domain, in a project created from scratch. I chose healthcare, where my career began, and rebuilt a platform like the one I worked on at my first job as my own version. It took me deeper into the database, the ORM and dependency injection, and its architecture also plans for AI: an LLM layer to help clinicians interpret patient metrics, still to be tested.
-- **Alphard:** practicing on it with a friend, so I could study and build at the same time.
-- **Portfolio:** started building it.
+- **Ethos:** I started it from scratch, with FastAPI, PostgreSQL and SQLAlchemy 2.0 behind an Express gateway. I took charge of every layer, from the database to the deploy.
+- **Alphard:** my friend and I kept learning the best business rules of finance as we built it. 
+- **Portfolio:** I started building it.
 
 </details>
 
 <details>
-<summary><b>August 2026: first complete projects</b></summary>
+<summary><b>August 2026: first sight of complete projects</b></summary>
 
-- **Going deeper:** studying more: besides databases, the back end and the structure behind it, in depth, making things more complex on purpose and focusing on the main problems.
-- **Alphard:** the project with a friend, and where everything I had learned came together. Finance and security interest me most, so it's a real-time fraud detection engine for banks. For the machine learning side, the idea is Isolation Forest: it learns what normal looks like and flags what stands out, without needing labeled cases, which are rare in practice.
-- **Helvetios:** the bank itself, designed in parallel so Alphard has something to protect: a core banking system.
-- **Larawag:** alongside Alphard, a space to test specific problems in isolation, away from any business logic, starting with idempotency.
-- **Data at scale:** after studying databases in July, I wanted to see how a very large integration works. In migrations at work I moved front ends and services, while the database had its own owner. I like understanding the whole picture, so I wanted to know how it was done and how I would do it.
+- **Going deeper:** besides databases, I studied the back end and the structure behind it in depth. I made things more complex on purpose, so I could focus on the problems that matter most.
+- **Alphard, Helvetios and Larawag:** all three were designed and started this month, side by side.
+- **n8n finds its place:** in Larawag, it sits at the edge of the system, never at its core.
+- **Data at scale:** after studying databases in July, I wanted to see how a very large integration works. I had migrated front ends and services before, but never the data layer. I like understanding the whole picture, so I set out to learn how it's done and how I would approach it.
 
 </details>
 
 <details>
 <summary><b>July 2026: deciding to change</b></summary>
 
-- **Testing myself:** I wanted to see whether I was at the same level as a full-stack developer as I was as an AI engineer. So I set out to study in depth and create a project with a friend from start to finish.
-- **From features to full projects:** instead of leaving ideas as ideas, as I always had, or building isolated features, I started building complete projects, putting them up in my lab and checking how far they could go.
+- **From features to full projects:** instead of leaving ideas as ideas, as I always had, or building isolated features, I started creating complete projects, putting them up in my lab and checking how far they could go.
 - **Databases and machine learning:** how data moves with agents caught my attention, so I went back to databases and to how machine learning connects with them.
-- **Back-end challenges:** took them on to measure where I stood.
-- **Titanium TX:** the closest project to what I do at work, moved to heavy commercial vehicles. I knew how to build this kind of app, so I set myself the challenge of digging into its business rules. The front end is built and it's clear what it will do; next comes the deploy.
+- **Titanium TX:** a marketplace for heavy commercial vehicles. I already knew how to build this kind of app, so I set myself the challenge of digging into its business rules. The front end is built and what it will do is clear, so the deploy comes next.
 
 </details>
 
 <details>
-<summary><b>June 2026: machine learning and data science</b></summary>
+<summary><b>June 2026: machine learning</b></summary>
 
-- **Machine Learning in Production (DeepLearning.AI):** machine learning taught me to think in terms of models and how they're trained. I focused on machine learning and data science.
-- **Apsis:** a tool for myself with an LLM inside, where I could ask anything. Building it showed me that not every question needs the same model, and that it costs tokens. It also showed me that a tool that makes you log everything gets annoying. Looking into that led to the projects I find most useful today.
+- **Machine Learning in Production (DeepLearning.AI):** I learned to see machine learning as a lifecycle, not a single step, and that improving the data often pays off more than tuning the model.
+- **Apsis:** a tool for myself with an LLM inside, where I could ask anything. Building it showed me that not every question needs the same model. It also taught me that an app that makes me log everything soon becomes a chore, and looking into that led to the projects I find most useful today.
 
 </details>
 
 <details>
 <summary><b>May 2026: back to the foundations</b></summary>
 
-- **The fundamentals, again:** reviewed all the basics.
-- **A pipeline at work:** designed the code-review pipeline that later became Arcturus.
+- **The fundamentals, again:** I reviewed software design, from layers and domain entities to hexagonal architecture.
+- **At work:** I designed a code-review pipeline based on RAG, which later became Arcturus.
 
 </details>
 
 <details>
 <summary><b>April 2026: systems and security</b></summary>
 
-- **UTN diploma:** started Linux network administration with cybersecurity.
+- **UTN-FRD:** I began the University Diploma in Linux Network Administration with a focus on Cybersecurity, to understand the parts of a system beyond my own code.
+- **In practice:** every project in Shipped went through a security review based on what I learned here.
 
 </details>
 
 <details>
 <summary><b>March 2026: automation</b></summary>
 
-- **n8n:** started researching how I could use it.
+- **n8n:** I researched it through engineers' YouTube channels, which helped me understand it and decide what was worth learning. Then a full course showed me what it could automate, from webhooks to AI agents, and left me with a list of ideas still to build.
+- **Next step:** I decided to take it slowly and figure out how to fit it into complete projects of my own, starting with where n8n ends and the business logic begins.
 
 </details>
 
